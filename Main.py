@@ -49,7 +49,7 @@ Make_Graph = True #create the visual graph networks
 Make_Charts = False #create the charts for graph and statistics
 
 for k in range(1):  # used to automate tests over a variety of 1 or 2 parameters, how many times to run each parameter set
-    #diameter = 0
+    diameter = 0
     for i in range(1): #used to automate tests over a variety of 1 or 2 parameters, varying how many times to adjust first parameter
         diameter += 0.5
         influencer_diameter = 0
