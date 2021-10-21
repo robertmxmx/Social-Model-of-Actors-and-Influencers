@@ -48,14 +48,13 @@ DecayType = DecayType.DecayUniform #another option produced is OpinionDailyChang
 Make_Graph = True #create the visual graph networks
 Make_Charts = False #create the charts for graph and statistics
 
-
-diameter = 0
-for i in range(2): #used to automate tests over a variety of 1 or 2 parameters, varying how many times to adjust first parameter
-    diameter += 0.5
-    influencer_diameter = 0
-    for j in range(2): #used to automate tests over a variety of 1 or 2 parameters, varying how many times to adjust second parameter ,
-        influencer_diameter += 0.5
-        for k in range(1):  # used to automate tests over a variety of 1 or 2 parameters, how many times to run each parameter set
+for k in range(1):  # used to automate tests over a variety of 1 or 2 parameters, how many times to run each parameter set
+    #diameter = 0
+    for i in range(1): #used to automate tests over a variety of 1 or 2 parameters, varying how many times to adjust first parameter
+        diameter += 0.5
+        influencer_diameter = 0
+        for j in range(1): #used to automate tests over a variety of 1 or 2 parameters, varying how many times to adjust second parameter ,
+            influencer_diameter += 0.5
 
             #to use a custom seed, you can uncomment the next two lines and comment out the following 2 lines as they set the seed to be a random number
             #seed = 11
